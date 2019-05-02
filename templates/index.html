@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>FakeSpector-Home</title>
+
+  <!-- Bootstrap -->
+  <link href="static/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/animate.css">
+  <link href="static/css/animate.min.css" rel="stylesheet">
+  <link href="static/css/style1.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- =======================================================
+    Theme Name: Day
+    Theme URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+    <style type="text/css">
+    #overlay{
+      position:fixed;
+      z-index:99999999;
+      top:0;
+      left:0;
+      bottom:0;
+      right:0;
+      background: #fff;
+    }
+</style>
+</head>
+
+<body>
+<div id="overlay">
+     <img style="top: 35%;width: 10%; left: 45%;position: relative;" src="../static/ajax-loader.gif" alt="Loading" />
+</div>
+<!--<div id=“loading”>
+<span>Loading...</span>
+</div>-->
+  <header id="header">
+    <nav class="navbar navbar-default navbar-static-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+          <div class="navbar-brand">
+            <a href="/"><h1>FakeSpector</h1></a>
+          </div>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div class="menu">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation"><a href="/" class="active">Home</a></li>
+              <li role="presentation"><a href="/product" >Reviews Analyzed</a></li>
+              <li role="presentation"><a href="/services">How it works?</a></li>
+              <li role="presentation"><a href="/contact">Contact</a></li>
+              <li role="presentation"><a href="/about">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--/.container-->
+    </nav>
+    <!--/nav-->
+  </header>
+  <!--/header-->
+<!--<div class="preload" align="center">
+                        <img src="../static/ajax-loader.gif">
+                    </div> -->
+  <div class="slider">
+    <div id="about-slider">
+      <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators visible-xs">
+          <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-slider" data-slide-to="1"></li>
+          <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="static/abcd.jpg" class="img-responsive" alt="">
+            <div class="carousel-caption">
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+
+                  <h4 style="font-size: 40px; color: white; font-style: italic" ><span>Can you trust the Hotel ratings?</span></h4>
+                   <h4 style="font-size: 40px; color: white; font-style: italic"><span>Find out here by analyzing the reviews!</span></h4>
+              </div>
+                <form method="post" action="/response">
+                    <div class="btn-gamp">
+                        <input type="text" class="form-control" name="num" placeholder="Paste a URL from our supported websites here">
+                    </div>
+                    <input id="analyzebtn" class="btn btn-primary" type="submit" value="Analyze" onclick="loading()" id="a">
+                </form>
+            </div></div>
+          <div class="item">
+            <img src="static/abcd.jpg" class="img-responsive" alt="">
+            <div class="carousel-caption">
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.0s">
+               <h4 style="font-size: 40px; color: white; font-style: italic" ><span>Can you trust the Hotel ratings?</span></h4>
+                   <h4 style="font-size: 40px; color: white; font-style: italic"><span>Find out here by analyzing the reviews!</span></h4>
+              </div>
+                <form method="post" action="/response">
+                    <div class="btn-gamp">
+                        <input type="text" class="form-control" name="num" placeholder="Paste a URL from our supported websites here">
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Analyze">
+                </form>
+              <div class="col-md-10 col-md-offset-1">
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                </div>
+              </div>
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.6s">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="static/abcd.jpg" class="img-responsive" alt="">
+            <div class="carousel-caption">
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+
+              <h4 style="font-size: 40px; color: white; font-style: italic" ><span>Can you trust the Hotel ratings?</span></h4>
+                   <h4 style="font-size: 40px; color: white; font-style: italic"><span>Find out here by analyzing the reviews!</span></h4>
+              </div>
+                <form method="post" action="/response">
+                    <div class="btn-gamp">
+                        <input type="text" class="form-control" name="num" placeholder="Paste a URL from our supported websites here">
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Analyze">
+                </form>
+              <div class="col-md-10 col-md-offset-1">
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                </div>
+              </div>
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+
+        <a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+      </div>
+      <!--/#carousel-slider-->
+    </div>
+    <!--/#about-slider-->
+  </div>
+  <!--/#slider-->
+
+  <div class="about">
+    <div class="container">
+      <div class="text-center">
+        <h2>How it Works? </h2>
+        <div class="col-md-10 col-md-offset-1">
+          <p>Growing suspicious of online reviews? So were we. Fakespector provides consumers with a new way of filtering hotel reviews to find out what real users are saying about the hotel you want to CHECK IN. Our proprietary technology analyzes millions of product reviews, looking for suspicious patterns and incentivized reviews. We then weed out the reviews we think are unreliable. Don’t take our work for it — You be the judge.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="services">
+    <div class="container">
+      <div class="text-center">
+        <h2>DON'T TAKE OUR WORD FOR IT</h2>
+      </div>
+      <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <i class="fa fa-heart-o"></i>
+        <h3>Trusted by millions worldwide</h3>
+        <p></p>
+      </div>
+      <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+        <i class="fa fa-cloud"></i>
+        <h3>Billions of reviews analyzed</h3>
+        <p></p>
+      </div>
+      <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+        <i class="fa fa-book"></i>
+        <h3>Committed to changing the way people shop online</h3>
+        <p></p>
+      </div>
+      <div class="col-md-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
+        <i class="fa fa-gear"></i>
+          <h3>Easy to Find out Fake Reviews</h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="gallery">
+    <div class="text-center">
+      <h2>Best Hotel Reviews</h2>
+      <p>We ran these TripAdvisor and Yelp Best Sellers through our algorithm and these are the grades they received from the quality of their reviews. </p>
+    </div>
+    <div class="container">
+      <div class="col-md-4">
+        <figure class="effect-marley">
+          <img src="static/a3.jpg" alt="" width="275" height="183" class="img-responsive" />
+          <figcaption>
+             <h4>97% Truthful</h4>
+            <p>Grant Hotel, most of the reviews were authentic</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="effect-marley">
+          <img src="static/a2.jpg" alt="" width="275" height="183" class="img-responsive" />
+          <figcaption>
+            <h4>85% Truthful</h4>
+            <p>Inn Above, some of the reviews were fake</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="effect-marley">
+          <img src="static/a3.jpg" alt="" width="275" height="183" class="img-responsive" />
+          <figcaption>
+            <h4>91% Truthful</h4>
+            <p>Hotel Via, most of the reviews were authentic</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col-md-4">
+        <figure class="effect-marley">
+          <img src="static/a2.jpg" alt="" width="275" height="183" class="img-responsive" />
+          <figcaption>
+            <h4>86% Truthful</h4>
+            <p>HolidayInn, most of the reviews were fake</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="effect-marley">
+          <img src="static/a6.jpg" alt="" width="275" height="183" class="img-responsive" />
+          <figcaption>
+            <h4>64% Truthful</h4>
+            <p>Tulip, reviews were purely authentic</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="effect-marley">
+          <img src="static/a5.jpg" alt="" width="275" height="183" class="img-responsive" />
+          <figcaption>
+            <h4>77% Truthful</h4>
+            <p>Mountain Hills,reviews were not purely authentic</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <h4>About Us</h4>
+        <p>FakeSpector team information</p>
+        <div class="contact-info">
+          <ul>
+            <li><i class="fa fa-home fa"></i>FAST-NUCES, Islamabad, PAK</li>
+            <li><i class="fa fa-phone fa"></i> +92 051 123456789</li>
+            <li><i class="fa fa-envelope fa"></i> info@fakespector.pk</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+        <div class="text-center">
+          <h4>Our Team</h4>
+          <ul class="sidebar-gallery">
+
+            <li><a href="#"><img src="static/77.JPG" alt="" /></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+        <div class="">
+          <h4>Newsletter Registration</h4>
+          <p>Subscribe today to receive the latest FakeSpector news via email. You may unsubscribe from this service at any time</p>
+          <div class="btn-gamp">
+            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter Email">
+          </div>
+          <div class="btn-gamp">
+            <a type="submit" class="btn btn-default">Subscribe</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="sub-footer">
+    <div class="container">
+      <div class="social-icon">
+        <div class="col-md-4">
+          <ul class="social-network">
+            <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-md-offset-4">
+        <div class="copyright">
+          &copy; FakeSpector Theme. All Rights Reserved.
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Day
+            -->
+            Designed by <a href="">DKY SOFTWARES</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="static/js/pace.min.js"></script>
+  <script src="static/js/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/wow.min.js"></script>
+<!-- <script>
+    $(function () {
+        $(".preload").fadeOut(2000,function () {
+            $(".response.html").fadeIn(1000);
+        })
+
+    })
+
+</script> -->
+<script type="text/javascript" id="a">
+    $(window).load(function(){
+       $("#overlay").delay(10).animate({ 'opacity': 0 }, 800, null, function() {
+            $('#overlay').fadeOut('slow');
+       });
+    });
+    $("#analyzebtn").load(function () {
+        $("#overlay").delay(10).animate({ 'opacity': 0 }, 800, null, function() {
+            $('#overlay').fadeOut('slow');
+       });
+    });
+</script>
+<script type="text/javascript">// <![CDATA[
+        function loading(){
+            $("#overlay").show();
+            $("#overlay").hide();
+        }
+// ]]></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+</body>
+
+</html>
